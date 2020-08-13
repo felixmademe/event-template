@@ -1,0 +1,72 @@
+body {
+    div#background-image{
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Johannes_gehrts_ragnarok_mindre.JPG/800px-Johannes_gehrts_ragnarok_mindre.JPG") no-repeat center center fixed;
+        background-size: cover;
+        opacity: 0.2;
+        filter: saturate(0);
+    }
+
+    div#background-overlay {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        animation: overlay 30s infinite;
+    }
+
+    @keyframes overlay {
+        $bg-opacity: 0.3;
+        0% {
+            opacity: 0;
+        }
+        20% {
+            background-color: $blue;
+            opacity: $bg-opacity;
+        }
+        40% {
+            background-color: $green;
+            opacity: $bg-opacity;
+        }
+        60% {
+            background-color: $red;
+            opacity: $bg-opacity;
+        }
+        80% {
+            background-color: $yellow;
+            opacity: $bg-opacity;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes overlay {
+        $bg-opacity: 0.3;
+        0% {
+            background-color: $yellow;
+            opacity: 0;
+        }
+        20% {
+            background-color: $blue;
+            opacity: $bg-opacity;
+        }
+        40% {
+            background-color: $green;
+            opacity: $bg-opacity;
+        }
+        60% {
+            background-color: $red;
+            opacity: $bg-opacity;
+        }
+        80% {
+            background-color: $cyan;
+            opacity: $bg-opacity;
+        }
+        100% {
+            background-color: $yellow;
+            opacity: 0;
+        }
+    }
+}

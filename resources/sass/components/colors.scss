@@ -1,0 +1,16 @@
+// Main colours
+$primary: rgb( 235, 87, 63 );
+$secondary: rgb( 48, 180, 215 );
+$tertiary: rgb( 67, 13, 112 );
+
+// Darker main colours
+$darken: 15%;
+$primary-dark: darken( $primary, $darken );
+$secondary-dark: darken( $secondary, $darken );
+$tertiary-dark: darken( $tertiary, $darken );
+
+// Lighter main colours
+$lighten: 15%;
+$primary-light: lighten( $primary, $lighten );
+$secondary-light: lighten( $secondary, $lighten );
+$tertiary-light: lighten( $tertiary, $lighten );
