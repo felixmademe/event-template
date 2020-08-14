@@ -5,7 +5,7 @@
             <h1>Kontakt</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row d-flex align-items-center">
         <div class="col-lg-6">
             <div class="card my-2">
                 <div class="card-body">
@@ -40,6 +40,9 @@
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="d-none d-lg-block col-lg-6">
+             <img class="img-fluid" alt="{{ config( 'app.name' ) }} logga" src="{{ asset( '/img/event-logo.png' ) }}">
         </div>
     </div>
     <div class="row">
